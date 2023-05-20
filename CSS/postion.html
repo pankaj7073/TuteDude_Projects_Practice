@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion</title>
+    <style>
+        #first-section{
+            background-color: rgb(12, 30, 191);
+            width: 40%;
+            /*position:absolute:-Accordingly work on body ;*/
+            /* position: absolute; */
+
+            position:fixed; 
+
+            /* position: relative:- According to div mean changes in box acoordingly to div */
+            /* position: relative;  */
+            
+            /* top: 50px;
+            left:50px; */
+            z-index:1; /* it's property means which elements see first. which z-index hight who first see*/
+        }
+        #second-section{
+            background-color: yellowgreen;
+            width: 40%;
+            height: 1000px;
+            position: relative; /* but when use z-index then both div or elements use same position;*/
+            /* z-index: 5; */
+            opacity:50%; /* Trasnfrency*/
+        }
+        #h1{
+            color: rgb(196, 186, 230);
+        }
+        #h2{
+            color: rgb(208, 226, 43);
+        }
+        .p1{
+            color: aquamarine;
+        }
+        .p2{
+            color: brown;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="first-section">
+        <h1 id="h1">I am Heading</h1>
+        <p class="p1">Hello heading are how are you you feel better , can i help you</p>
+    </div>
+    <div id="second-section">
+        <h2 id="h2">i am small heading</h2>
+        <p class="p2">hello small heading don't worry you size is small but your value is also high</p>
+    </div>
+    <p id="clear">PANKAJ</p>
+</body>
+</html>

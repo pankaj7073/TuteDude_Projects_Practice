@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Website Content</title>
+</head>
+<body>
+    <p id="first"> Hello guys how are ! </p>
+    <button id="second">Click Me</button>
+
+
+    <script>
+        // document.getElementById('second').onclick = function(){
+        //     document.getElementById('first').innerHTML += 'Oh! pankaj I am fine and you';
+        // }
+
+        document.getElementById('second').onclick = function(){
+            document.getElementById('first').innerHTML = "Oh pankaj" + document.getElementById('first').innerHTML;
+        }
+    </script>
+</body>
+</html>

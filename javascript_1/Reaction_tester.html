@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Tester Project</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reaction Tester Project</h1>
+    <p>Click As Quickly And Check The Reaction On Your Box</p>
+    <div id="box"></div>
+
+
+    <script>
+          var start = new Date().getTime()
+     function move(){
+            var left;
+            var top;
+            var wh;
+            left = Math.random()*300;
+            right = Math.random()*300;
+            wh = ((Math.random()*400)+100);
+
+            document.getElementById('box').style.left = left;
+            document.getElementById('box').style.top = top;
+            document.getElementById('box').style.width = wh;
+            document.getElementById('box').style.height =  wh;
+            document.getElementById('box').style.display = "block";
+            start = new Date().getTime()
+        }
+          
+        move();
+        document.getElementById('box').onclick = function(){
+            document.getElementById('box').style.display = "none";
+            var end = new Date().getTime();
+            var time = (end-start)/1000;
+            alert(time);
+            move();
+        }
+    </script>
+</body>
+</html>

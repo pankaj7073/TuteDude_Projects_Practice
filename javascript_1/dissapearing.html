@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+            width: 100px;
+            height: 100px;
+            background:red;
+            border-radius: 50px;
+        }
+        #second{
+            width: 100px;
+            height: 100px;
+            background:rgb(0, 255, 98);
+            border-radius: 50px;
+
+        }
+        
+        #third{
+            width: 100px;
+            height: 100px;
+            background:rgb(222, 239, 27);
+            border-radius: 50px;
+
+        }
+        #root{
+            height: 320px;
+            width: 110px;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+    </style>
+</head>
+<body>
+  <div id="root">
+    <div id="first"></div>
+    <div id="second"></div> 
+    <div id="third"></div>
+  </div>
+
+
+  <script>
+    document.getElementById('first').onclick = function(){
+        document.getElementById('first').style.visibility = 'hidden';
+    }
+    document.getElementById('second').onclick = function(){
+        document.getElementById('second').style.opacity = '0.5';
+    }
+    document.getElementById('third').onclick = function(){
+        document.getElementById('third').style.background = 'blue';
+    }
+  </script>
+</body>
+</html>
